@@ -1,5 +1,5 @@
 import random
-from minitorch.scalar.engine import Value
+from scalar.engine import Value
 
 class Module:
 

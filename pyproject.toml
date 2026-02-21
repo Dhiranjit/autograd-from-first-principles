@@ -1,8 +1,8 @@
 [project]
 name = "autograd-from-first-principles"
 version = "0.1.0"
-description = "Educational autograd engine from first principles"
-authors = [{name="Dhiran"}]
+description = "
+authors = [{name="Dhiranjit Daimary"}]
 dependencies = ["numpy"]
 
 [build-system]
