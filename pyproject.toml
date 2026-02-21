@@ -1,7 +1,7 @@
 [project]
-name = "autograd-from-first-principles"
+name = "autograd"
 version = "0.1.0"
-description = "
+description = ""
 authors = [{name="Dhiranjit Daimary"}]
 dependencies = ["numpy"]
 
