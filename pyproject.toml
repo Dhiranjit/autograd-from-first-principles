@@ -1,0 +1,10 @@
+[project]
+name = "autograd-from-first-principles"
+version = "0.1.0"
+description = "Educational autograd engine from first principles"
+authors = [{name="Dhiran"}]
+dependencies = ["numpy"]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
