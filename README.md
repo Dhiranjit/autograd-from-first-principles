@@ -32,15 +32,15 @@ Autograd (automatic differentiation) is a system that computes gradients of comp
 
 Neural networks are large composite functions:
 
-\[
+$$
 L = f(g(h(x)))
-\]
+$$
 
 During training, we need the gradient of the loss with respect to **every parameter**:
 
-\[
+$$
 \frac{\partial L}{\partial \theta}
-\]
+$$
 
 Instead of symbolically differentiating the entire expression or manually applying calculus for each model, autograd works by:
 
@@ -53,9 +53,9 @@ This backward propagation of gradients through the computational graph is known 
 
 Autograd enables gradient-based optimization such as:
 
-\[
+$$
 \theta = \theta - \alpha \frac{\partial L}{\partial \theta}
-\]
+$$
 
 The scalar engine demonstrates this process on individual values.  
 The tensor engine extends the same principles to multi-dimensional arrays with broadcasting-aware gradient flow, similar to modern deep learning frameworks.
