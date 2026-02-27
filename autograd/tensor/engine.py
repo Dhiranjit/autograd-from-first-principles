@@ -152,9 +152,8 @@ class Tensor():
         out._backward = _backward
         return out
 
-    # --------------------
+
     # Activations
-    # --------------------
     def tanh(self):
         t = np.tanh(self.data)
         out = Tensor(t, _prev=(self,), _op='tanh')
@@ -185,9 +184,7 @@ class Tensor():
         out._backward = _backward
         return out
 
-    # --------------------
-    # Reductions
-    # --------------------
+
     def mean(self):
         out = Tensor(self.data.mean(), _prev=(self,), _op='mean')
 
@@ -202,9 +199,7 @@ class Tensor():
         out._backward = _backward
         return out
     
-        # ---------------------
-    # Exp / Log
-    # ---------------------
+
     def exp(self):
         e = np.exp(self.data)
         out = Tensor(e, _prev=(self,), _op="exp")
@@ -220,6 +215,7 @@ class Tensor():
         out._backward = _backward
         return out
 
+
     def log(self):
         out = Tensor(np.log(self.data), _prev=(self,), _op="log")
 
@@ -234,9 +230,8 @@ class Tensor():
         out._backward = _backward
         return out
 
-    # ---------------------
-    # Sum (axis support)
-    # ---------------------
+
+    # Sum (with axis support)
     def sum(self, axis=None, keepdims=False):
         out = Tensor(self.data.sum(axis=axis, keepdims=keepdims),
                      _prev=(self,), _op="sum")
@@ -259,9 +254,8 @@ class Tensor():
         out._backward = _backward
         return out
 
-    # --------------------
+
     # Backward
-    # --------------------
     def backward(self):
         topo = []
         visited = set()
