@@ -114,3 +114,10 @@ These notebooks demonstrate forward passes, gradient propagation, and parameter 
 <p align="center">
   <img src="images/MNIST_predictions.png" width="600">
 </p>
+
+## Installation
+```bash
+git clone https://github.com/Dhiranjit/autograd-from-first-principles.git
+cd autograd-from-first-principles
+pip install -e```
+
